@@ -61,7 +61,7 @@ def email_count(input_file, to_email_list, from_email_list, email_body):
     #print("\n-----\n")
     #pdb.set_trace()
     from_email_list.append(email['from'])
-    #email_body.append(email.get_payload())
+    email_body.append(email.get_payload())
     
     
 
@@ -71,7 +71,7 @@ def email_count(input_file, to_email_list, from_email_list, email_body):
 to_email_list = []
 from_email_list = []
 
-rootDir = 'C:\\Users\\Shantnu\\Desktop\\Data Sources\\maildir\\'
+rootDir = 'C:\\Users\\Shantnu\\Desktop\\Data Sources\\maildir\\lay-k'
 count = 0
 for dirName, subdirList, fileList in os.walk(rootDir):
     for filename in fileList:
@@ -79,8 +79,8 @@ for dirName, subdirList, fileList in os.walk(rootDir):
         email_count(os.path.join(dirName, filename), to_email_list, from_email_list, email_body)
         #print (str(count)+" ", end="")
         count += 1
-        #with open("email_text.txt", "a") as f:
-        #    f.write("\n".join(email_body))
+        with open("email_text.txt", "a") as f:
+            f.write("\n".join(email_body))
 
 #pdb.set_trace()
 #print("\n\nTop To email addresses: \n ")        
@@ -102,30 +102,9 @@ print(Counter(from_email_list).most_common(10))
 
 with open("from_email_text.txt", "a") as f:
     for l in from_email_list:
-        f.write(l)
-        f.write("\n")
-
-
-'''
-PS C:\Users\Shantnu\Desktop\Dropbox> python .\Enron2.py
-To:
-[('richard.shapiro@enron.com', 15149), ('jeff.dasovich@enron.com', 14207), ('tana.jones@enron.com', 12828), ('steven.kea
-n@enron.com', 12754), ('sara.shackleton@enron.com', 11433), ('james.steffes@enron.com', 10347), ('mark.taylor@enron.com'
-, 9787), ('pete.davis@enron.com', 9281), ('susan.mara@enron.com', 9064), ('paul.kaufman@enron.com', 8522)]
+        if l:
+            f.write(l)
+            f.write("\n")
 
 
 
-From:
-[('kay.mann@enron.com', 16735), ('vince.kaminski@enron.com', 14368), ('jeff.dasovich@enron.com', 11411), ('pete.davis@en
-ron.com', 9149), ('chris.germany@enron.com', 8801), ('sara.shackleton@enron.com', 8777), ('enron.announcements@enron.com
-', 8587), ('tana.jones@enron.com', 8490), ('steven.kean@enron.com', 6759), ('kate.symes@enron.com', 5438)]
-Traceback (most recent call last):
-  File ".\Enron2.py", line 105, in <module>
-    f.write(l)
-TypeError: must be str, not None
-'''
-
-
-'''
-g K. Lay's mail and J. Skilling's mail.
-'''
