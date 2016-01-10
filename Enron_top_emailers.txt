@@ -1,0 +1,31 @@
+Top email senders and recievers in all Emails:
+
+To:
+[('richard.shapiro@enron.com', 15149), ('jeff.dasovich@enron.com', 14207), ('tana.jones@enron.com', 12828), ('steven.kea
+n@enron.com', 12754), ('sara.shackleton@enron.com', 11433), ('james.steffes@enron.com', 10347), ('mark.taylor@enron.com'
+, 9787), ('pete.davis@enron.com', 9281), ('susan.mara@enron.com', 9064), ('paul.kaufman@enron.com', 8522)]
+
+
+
+From:
+[('kay.mann@enron.com', 16735), ('vince.kaminski@enron.com', 14368), ('jeff.dasovich@enron.com', 11411), ('pete.davis@en
+ron.com', 9149), ('chris.germany@enron.com', 8801), ('sara.shackleton@enron.com', 8777), ('enron.announcements@enron.com
+', 8587), ('tana.jones@enron.com', 8490), ('steven.kean@enron.com', 6759), ('kate.symes@enron.com', 5438)]
+
+
+========================================================================
+
+Top email senders and recievers in K lays Emails:
+
+
+To:
+[('kenneth.lay@enron.com', 2039), ('klay@enron.com', 1903), ('jeff.skilling@enron.com', 372), ('mark.koenig@enron.com',
+313), ('mark.frevert@enron.com', 304), ('greg.whalley@enron.com', 304), ('steven.kean@enron.com', 278), ('mike.mcconnell
+@enron.com', 261), ('jeffrey.mcmahon@enron.com', 251), ('john.sherriff@enron.com', 244)]
+
+
+
+From:
+[('rosalee.fleming@enron.com', 856), ('brown_mary_jo@lilly.com', 82), ('leonardo.pacheco@enron.com', 78), ('savont@email
+.msn.com', 66), ('tori.wells@enron.com', 58), ('elizabeth.davis@compaq.com', 50), ('katherine.brown@enron.com', 47), ('n
+o.address@enron.com', 47), ('mrslinda@lplpi.com', 40), ('lizard_ar@yahoo.com', 36)]
